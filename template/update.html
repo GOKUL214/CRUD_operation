@@ -14,15 +14,15 @@
         {% csrf_token %}
         <div class="form-group" style=" padding-top: 30px;">
           <label for="">SL NO:</label>
-          <input type="number" class="form-control" name="num" id="" aria-describedby="emailHelp" placeholder="">
+          <input type="number" class="form-control" name="num" id="" aria-describedby="emailHelp" placeholder="" value="{{task.num}}">
         </div>
         <div class="form-group">
           <label for="">Item name:</label>
-          <input type="text" class="form-control" name="name" id="" placeholder="">
+          <input type="text" class="form-control" name="name" id="" placeholder="" value="{{task.namegit }}">
         </div>
         <div class="form-group" style="padding-bottom: 30px;">
             <label for="">Description:</label>
-            <input type="text" class="form-control" name="desc" id="" placeholder="">
+            <input type="text" class="form-control" name="desc" id="" placeholder="" value="{{task.num}}">
           </div>
         <button type="submit" class="btn btn-success">Conform</button>
       </form>
